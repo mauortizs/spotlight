@@ -1,0 +1,215 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.azulito{
+    color: #5C85F7;
+  }
+
+.nav-link{
+    padding: 1em;
+}
+
+.navbar{
+    padding: 1em;
+    background: rgb(34,34,34);
+    background-color: transparent !important;
+    transition: all 0.5s;
+}
+
+.navbar-scrolled{
+    padding: 1em;
+    background: rgb(34,34,34);
+    background: linear-gradient(248deg, rgba(34,34,34,1) 0%, rgba(52,52,140,1) 100%);
+}
+
+.offcanvas{
+    padding: 1em;
+    background: rgb(34,34,34);
+    background: linear-gradient(248deg, rgba(34,34,34,1) 0%, rgba(52,52,140,1) 100%);
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+    position: relative;
+    z-index: 2;
+}
+  
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.la-primera {
+    min-height: 450px;
+    background: rgb(22,22,35);
+    background: linear-gradient(248deg, rgba(22,22,35,1) 0%, rgba(34,34,34,1) 100%);
+}
+
+.liberamos {
+    min-height: 450px;
+    
+}
+
+.la-primera h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 3rem;
+}
+
+.liberamos h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 3rem;
+}
+
+/* el tamaño máximo de nuestra imagen corresponderá al a de su elemento padre que sería la web*/
+.video-metodologia{
+    width: 100%;
+    max-width: 1200px ;
+}
+
+
+/*Seccion Number Counting */
+
+.section-number-counting {
+    min-height: 450px;
+    background: rgb(22,73,255);
+    background: linear-gradient(248deg, rgba(22,73,255,1) 0%, rgba(39,69,150,1) 100%);
+
+}
+
+.num{
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.p-number-counting{
+    font-size: 1.5em;
+    color: rgb(197, 197, 197);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+@media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('galeria/website-hero-mobile.png') black no-repeat center center scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+  
+@media screen and (max-width: 750px){
+  
+    .liberamos h2 {
+        font-weight:700;
+        font-size:2.5rem;
+    }
+
+    .la-primera h2 {
+        font-weight:700;
+        font-size:2.5rem;
+    }
+
+}
