@@ -12,25 +12,25 @@ h1{
     color: #5C85F7;
   }
 
-/*.nav-link{
-    padding: 1em;
-}*/
+/* Seccion Nav y Header */
 
 .navbar{
-    /*padding: 1em;*/
     background: rgb(34,34,34);
     background-color: transparent !important;
     transition: all 0.5s;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
 }
 
 .navbar-scrolled{
-    /*padding: 1em;*/
     background: rgb(34,34,34);
     background: linear-gradient(248deg, rgba(34,34,34,1) 0%, rgba(52,52,140,1) 100%);
+    visibility: visible;
+    opacity: 1;
 }
 
 .offcanvas{
-    /*padding: 1em;*/
     background: rgb(34,34,34);
     background: linear-gradient(248deg, rgba(34,34,34,1) 0%, rgba(52,52,140,1) 100%);
 }
@@ -75,33 +75,25 @@ header .overlay {
     z-index: 1;
 }
 
+/* Seccion Carousel texto */
+
+
 .la-primera {
-    min-height: 450px;
     background: rgb(22,22,35);
     background: linear-gradient(248deg, rgba(22,22,35,1) 0%, rgba(34,34,34,1) 100%);
 }
 
-.liberamos {
-    min-height: 450px;
-    
-}
-
-.la-primera h2 {
-    font-size: 3.5rem;
+.h2-liberamos {
+    font-size: 3rem;
     font-weight: 700;
-    padding: 3rem;
+    padding: 1rem;
 }
 
-.liberamos h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding: 3rem;
-}
-
-/* el tamaño máximo de nuestra imagen corresponderá al a de su elemento padre que sería la web*/
+/* Sección video Metodología - el tamaño máximo de nuestra imagen corresponderá al a de su elemento padre que sería la web*/
 .video-metodologia{
     width: 100%;
     max-width: 1200px ;
+    padding: 10px;
 }
 
 
@@ -124,67 +116,102 @@ header .overlay {
     color: rgb(197, 197, 197);
 }
 
+/* Seccion Nuestras Estudiantes */
+
+#carouselExample{
+    padding: 50px;
+    min-height: 450px;
+}
+
+#myCarousel{
+    padding: 50px;
+    min-height: 450px;
+    background: url('galeria/website-hero-mobile.png') black center center scroll;
+}
+
+.video-estudiantes{
+    width: 100%;
+    max-width: 800px ;
+}
+
+h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #161623;
+}
+
+.fas{
+    color: grey;
+}
 
 
+/* Carousel base class */
 
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
 
+/* Declare heights because of positioning of img element */
+.carousel-texto {
+  height: 32rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Media Query for devices withi coarse pointers and no hover functionality */
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5C85F7;
+}
   
-  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+  
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
   
 @media (pointer: coarse) and (hover: none) {
     header {
@@ -199,17 +226,92 @@ header .overlay {
       display: none;
     }
   }
-  
-@media screen and (max-width: 750px){
-  
-    .liberamos h2 {
-        font-weight:700;
-        font-size:2.5rem;
+
+
+
+@media screen and (max-width: 1130px){
+
+    .video-estudiantes{
+        width: 100%;
+        max-width: 600px;
     }
 
-    .la-primera h2 {
-        font-weight:700;
-        font-size:2.5rem;
+    .p-number-counting{
+        font-size: 1.3em;
+    }  
+
+
+
+}
+
+
+@media screen and (max-width: 1006px){
+
+    .p-number-counting{
+        font-size: 0.9em;
+    }
+
+    .num{
+        font-size: 3em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 860px){
+
+    .video-estudiantes{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .p-number-counting{
+        font-size: 0.9em;
+    }
+
+    .num{
+        font-size: 3em;
     }
 
 }
+
+@media screen and (max-width: 767px){
+    .container-number{
+        padding: 20px;
+    }
+
+    .col-md-4{
+        margin: 10px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 750px){
+    
+    h1{
+        font-size: 3rem;
+      }
+
+}
+
+@media screen and (max-width: 710px){
+
+    .video-estudiantes{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .num{
+        font-size: 5em;
+        font-weight: 700;
+    }
+    
+    .p-number-counting{
+        font-size: 1.5em;
+    }
+}
+

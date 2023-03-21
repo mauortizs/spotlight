@@ -10,13 +10,6 @@ if (window.scrollY > 56) {
 }
 });
 
-// ScrollReveal Header (nav y hero) y 1er section
-
-ScrollReveal().reveal('h1', { delay: 0 });
-ScrollReveal().reveal('.button-nav', { delay: 100 });
-ScrollReveal().reveal('.azulito', { delay: 200 });
-ScrollReveal().reveal('.h2-liberamos', { delay: 300 });
-
 // Código para hacer el efecto de contador de números y ScrollReveal
 
 let valueDisplays = document.querySelectorAll(".num");

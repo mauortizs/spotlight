@@ -24,7 +24,7 @@
   <header>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="galeria/logo-spotlight-transparante-blanco.png" width="200px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -92,27 +92,68 @@
         </div>
 
   </header>
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-texto active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0.67)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Performing Arts Program</h1>
+            <p>Si tienes experiencia en teatro musical te invitamos a participar en nuestro Taller Montaje Musical.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Más información</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-texto">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0.67)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Musical Training Program</h1>
+            <p>Si buscas entrenarte por primera vez en teatro musical, el Taller Entrenamiento Teatro Musical es para ti.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Más información</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-texto">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0.67)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Summer Intensive Program</h1>
+            <p>Cada verano ofrecemos una versión de 8 semanas de nuestro Taller Montaje Musical.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Más información</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
   
-  <!-- Sección del texto y video -->
-  <section class="la-primera align-items-strech section-liberamos">
+  <!-- Sección Video -->
+  <section class="la-primera">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h2 class="h2-liberamos"><span class="azulito">La primera y única organización en Perú</span> que combina el aprendizaje centrado en el estudiante, la adquisición del idioma inglés y el desarrollo de habilidades blandas <span class="azulito">a través de las artes escénicas</span></h2>
-        </div>
-        <div class="col-12">
+      <div class="row video-metodologia">
           <video src="videos/metodologia-spotlight.mp4" class="object-fit-contain video-metodologia" autoplay controls></video>
-        </div>
-        <div class="col">
-          <h2 class="h2-liberamos">LIBERAMOS EL POTENCIAL DE NUESTRAS Y NUESTROS ESTUDIANTES <span class="azulito">MEDIANTE EL APRENDIZAJE FUERA DEL AULA</span></h2>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Sección number-counting -->
   <section class="section-number-counting d-flex align-items-center">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
       <div class="row container-number">
         <div class="col-md-4">
           <div class="p-3 col-number-1 border border-5 rounded border-danger-subtle">
@@ -138,8 +179,66 @@
       </div>
     </div>
   </section>
-    
-    
+
+  <!-- Sección nuestras estudiantes -->
+
+  <div id="carouselExample" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+    <div class="carousel-inner">
+      <h2>Nuestras estudiantes</h2>
+      <div class="carousel-item active">
+          <video class="video-estudiantes" src="videos/video-ale.mp4" class="object-fit-contain video-metodologia" controls poster="galeria/poster-video-ale.png"></video>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Alexandra</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Amamos expresarnos a través de las artes. Aprendiendo un nuevo idioma, haciendo lo que amamos, conociendo nuevas personas y siendo parte de una familia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="video-estudiantes" src="videos/video-gabby.mp4" class="object-fit-contain video-metodologia" controls poster="galeria/poster-video-gabby.png"></video>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Gabby</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Siento que he crecido como artista en Spotlight. Ahora estudiaré teatro en AMDA (College and Conservatory of the Performing Arts). Kara, la directora de Spotlight, me ayudó con mi postulación.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="video-estudiantes" src="videos/video-vania.mp4" class="object-fit-contain video-metodologia" controls poster="galeria/poster-video-vania.png"></video>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Vania</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Cuando empecé en Spotlight con Waitress (2020) tenía poco conocimiento en canto, actuación y baile. Ahora estudiaré en el Institute of the Arts en Barcelona, España.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Sección footer -->
+  <section>
+  
+  </section>
+
+
+  
     
 
 
